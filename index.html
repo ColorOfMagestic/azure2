@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>testwork azur</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/css/suggestions.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/js/jquery.suggestions.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Main -->
+    <main class="page">
+      <section class="reg-form">
+        <div class="container">
+          <div class="title_wrapper">
+            <img class="title_img" src="img/Icon(1).png" alt="User photo" />
+            <h1 class="title">Регистрация аккаунта</h1>
+          </div>
+          <form action="" class="user-form" name="userForm">
+            <div class="wrapper_error">
+              <div class="error">Поле не должно быть пустым</div>
+              <div class="in_wrap">
+                <input
+                  class="user-form_input"
+                  type="text"
+                  name="firstName"
+                  id="name"
+                  placeholder=" "
+                />
+                <label class="user-form_label" for="name">Имя</label>
+              </div>
+            </div>
+            <div class="wrapper_error">
+              <div class="error">Поле не должно быть пустым</div>
+              <div class="in_wrap">
+                <input
+                  class="user-form_input"
+                  type="text"
+                  name="secondName"
+                  id="secondName"
+                  placeholder=" "
+                />
+                <label class="user-form_label" for="secondName">Фамилия</label>
+              </div>
+            </div>
+            <div class="wrapper_error">
+              <div class="error">Поле не должно быть пустым</div>
+              <div class="in_wrap">
+                <input
+                  class="user-form_input"
+                  type="text"
+                  name="fatherName"
+                  id="fatherName"
+                  placeholder=" "
+                />
+                <label class="user-form_label" for="fatherName">Отчество</label>
+              </div>
+            </div>
+            <div class="wrapper_error">
+              <div class="error">Поле не должно быть пустым</div>
+              <div class="in_wrap">
+                <input
+                  class="user-form_input"
+                  type="text"
+                  name="company"
+                  id="company"
+                  placeholder=" "
+                />
+                <label class="user-form_label" for="company">Компания</label>
+              </div>
+            </div>
+            <div class="wrapper_error">
+              <div class="error">Поле не должно быть пустым</div>
+              <div class="in_wrap">
+                <input
+                  class="user-form_input"
+                  type="text"
+                  name="position"
+                  id="position"
+                  placeholder=" "
+                />
+                <label class="user-form_label" for="position">Должность</label>
+              </div>
+            </div>
+            <div class="wrapper_error">
+              <div class="error">Введите адрес</div>
+              <div class="in_wrap">
+                <textarea
+                  id="address"
+                  class="user-form_textarea"
+                  name="textarea"
+                  placeholder=" "
+                ></textarea>
+                <label
+                  class="user-form_label user-form_label_textarea"
+                  for="address"
+                  >Адрес предприятия</label
+                >
+              </div>
+            </div>
+            <div class="wrapper_error">
+              <div class="error">Поле не должно быть пустым</div>
+              <div class="in_wrap">
+                <input
+                  class="user-form_input"
+                  type="text"
+                  name="inn"
+                  id="inn"
+                  maxlength="12"
+                  placeholder=" "
+                />
+                <label class="user-form_label" for="inn"
+                  >ИНН предприятия торговли</label
+                >
+              </div>
+            </div>
+            <div class="wrapper_error">
+              <div class="error"></div>
+              <div class="in_wrap">
+                <input
+                  class="user-form_input"
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  placeholder=" "
+                />
+                <label class="user-form_label" for="tel">Номер телефона </label>
+              </div>
+            </div>
+            <div class="wrapper_error">
+              <div class="error">Пароль должен быть больше 6 знаков</div>
+              <div class="in_wrap in_wrap-pass">
+                <input
+                  class="user-form_input"
+                  id="password"
+                  type="password"
+                  name="password"
+                  placeholder=" "
+                />
+                <label class="user-form_label" for="password">Пароль</label>
+                <button class="eye"></button>
+              </div>
+            </div>
+            <div class="wrapper_error">
+              <div class="error">Пароли не совпадают</div>
+              <div class="in_wrap in_wrap-pass">
+                <input
+                  class="user-form_input"
+                  id="passwordDouble"
+                  type="password"
+                  name="password"
+                  placeholder=" "
+                />
+                <label class="user-form_label" for="passwordDouble"
+                  >Повторите пароль</label
+                >
+                <button class="eye"></button>
+              </div>
+            </div>
+
+            <label class="user-form_checkbox_label">
+              <input
+                class="user-form_checkbox_input"
+                type="checkbox"
+                name="checkbox"
+                checked
+              />
+              <span class="check-style"></span>
+              Нажимая кнопку «Зарегистрироваться»<br />я принимаю
+              <a class="user-form_checkbox_input_link" href=""
+                >Пользовательское соглашение</a
+              >
+            </label>
+            <input
+              class="user-form_input--button"
+              role="button"
+              type="submit"
+              value="Зарегистрироваться"
+            />
+          </form>
+          <p class="reg-form_paragraf">
+            Уже есть аккаунт?
+            <a class="reg-form_paragraf_link" href="">Страница входа</a>
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- End main -->
+    <script src="js/src/inputmask.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
